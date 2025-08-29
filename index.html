@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Afro-puff Hairstudio - Responsive Layout with Flexbox & Grid</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Main Grid Container -->
+    <div class="page-container">
+        
+        <!-- Header Section - Using Flexbox -->
+        <header class="header">
+            <div class="header-content">
+                <h1 class="logo">Afro-puff Hairstudio</h1>
+                <nav class="nav">
+                    <ul class="nav-list">
+                        <li><a href="#home" class="nav-link">Home</a></li>
+                        <li><a href="#services" class="nav-link">Services</a></li>
+                        <li><a href="#gallery" class="nav-link">Gallery</a></li>
+                        <li><a href="#about" class="nav-link">About</a></li>
+                        <li><a href="#contact" class="nav-link">Contact</a></li>
+                    </ul>
+                    <button class="mobile-menu-btn">☰</button>
+                </nav>
+            </div>
+        </header>
+
+        <!-- Hero Section - Using Flexbox for alignment -->
+        <section class="hero" id="home">
+            <div class="hero-content">
+                <h2 class="hero-title">Celebrating Natural Beauty</h2>
+                <p class="hero-description">Expert styling for textured hair with passion, creativity, and care.</p>
+                <div class="hero-buttons">
+                    <button class="btn-primary">Book Now</button>
+                    <button class="btn-secondary">Learn More</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Main Content Area - Using CSS Grid -->
+        <main class="main-content">
+            
+            <!-- Services Section - Grid Layout -->
+            <section class="services" id="services">
+                <div class="section-header">
+                    <h2 class="section-title">Our Services</h2>
+                    <p class="section-subtitle">Professional care for every hair type and texture</p>
+                </div>
+                
+                <!-- Services Grid -->
+                <div class="services-grid">
+                    <div class="service-card featured">
+                        <div class="service-icon">✂️</div>
+                        <h3 class="service-title">Protective Styling</h3>
+                        <p class="service-description">Beautiful braids, twists, and updos that protect and nurture your natural hair.</p>
+                        <div class="service-price">From $80</div>
+                    </div>
+                    
+                    <div class="service-card">
+                        <div class="service-icon">💧</div>
+                        <h3 class="service-title">Deep Conditioning</h3>
+                        <p class="service-description">Intensive treatments to restore moisture and strength to damaged hair.</p>
+                        <div class="service-price">From $65</div>
+                    </div>
+                    
+                    <div class="service-card">
+                        <div class="service-icon">🌿</div>
+                        <h3 class="service-title">Natural Hair Care</h3>
+                        <p class="service-description">Specialized cutting, styling and maintenance for natural textures.</p>
+                        <div class="service-price">From $55</div>
+                    </div>
+                    
+                    <div class="service-card">
+                        <div class="service-icon">💫</div>
+                        <h3 class="service-title">Loc Maintenance</h3>
+                        <p class="service-description">Expert care for all stages of your loc journey from start to finish.</p>
+                        <div class="service-price">From $75</div>
+                    </div>
+                    
+                    <div class="service-card">
+                        <div class="service-icon">💡</div>
+                        <h3 class="service-title">Hair Consultations</h3>
+                        <p class="service-description">Personalized advice on products, routines, and styling options.</p>
+                        <div class="service-price">From $40</div>
+                    </div>
+                    
+                    <div class="service-card">
+                        <div class="service-icon">🎨</div>
+                        <h3 class="service-title">Color Services</h3>
+                        <p class="service-description">Safe, professional coloring techniques for natural and relaxed hair.</p>
+                        <div class="service-price">From $120</div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Gallery Section - Flexbox for image layout -->
+            <section class="gallery" id="gallery">
+                <div class="section-header">
+                    <h2 class="section-title">Our Work</h2>
+                    <p class="section-subtitle">Beautiful transformations by our talented stylists</p>
+                </div>
+                <div class="gallery-grid">
+                    <div class="gallery-item">
+                        <div class="gallery-placeholder">
+                            <span>Before/After</span>
+                            <p>Protective Braids</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <div class="gallery-placeholder">
+                            <span>Natural Styling</span>
+                            <p>Twist Out</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <div class="gallery-placeholder">
+                            <span>Loc Journey</span>
+                            <p>Maintenance</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <div class="gallery-placeholder">
+                            <span>Color Work</span>
+                            <p>Highlights</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Sidebar - Using Flexbox -->
+        <aside class="sidebar">
+            <div class="sidebar-section">
+                <h3 class="sidebar-title">Quick Book</h3>
+                <form class="booking-form">
+                    <input type="text" placeholder="Your Name" class="form-input">
+                    <input type="email" placeholder="Email" class="form-input">
+                    <select class="form-select">
+                        <option>Select Service</option>
+                        <option>Protective Styling</option>
+                        <option>Natural Hair Care</option>
+                        <option>Loc Maintenance</option>
+                    </select>
+                    <button type="submit" class="form-btn">Book Appointment</button>
+                </form>
+            </div>
+            
+            <div class="sidebar-section">
+                <h3 class="sidebar-title">Hair Care Tips</h3>
+                <div class="tips-list">
+                    <div class="tip-item">
+                        <h4>Daily Moisture</h4>
+                        <p>Keep your hair hydrated with leave-in conditioners.</p>
+                    </div>
+                    <div class="tip-item">
+                        <h4>Gentle Handling</h4>
+                        <p>Use wide-tooth combs and avoid excessive manipulation.</p>
+                    </div>
+                    <div class="tip-item">
+                        <h4>Night Protection</h4>
+                        <p>Sleep with a silk or satin pillowcase or bonnet.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="sidebar-section">
+                <h3 class="sidebar-title">Contact Info</h3>
+                <div class="contact-details">
+                    <div class="contact-item">
+                        <span class="contact-icon">📍</span>
+                        <div>
+                            <p>123 Beauty Boulevard</p>
+                            <p>Nairobi, Kenya</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-icon">📞</span>
+                        <div>
+                            <p>+254 123 456 789</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-icon">✉️</span>
+                        <div>
+                            <p>info@afropuffstudio.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+        <!-- About Section - Using Flexbox for layout -->
+        <section class="about" id="about">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2 class="section-title">About Afro-puff Hairstudio</h2>
+                    <p>Founded with love for natural hair, we celebrate and enhance the beauty of textured hair. Our experienced stylists understand the unique needs of natural hair and provide personalized care.</p>
+                    <div class="stats">
+                        <div class="stat-item">
+                            <span class="stat-number">500+</span>
+                            <span class="stat-label">Happy Clients</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">5</span>
+                            <span class="stat-label">Years Experience</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">15+</span>
+                            <span class="stat-label">Services Offered</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="image-placeholder">
+                        <span>Salon Interior</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer - Using Flexbox -->
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4 class="footer-title">Afro-puff Studio</h4>
+                    <p>Celebrating natural beauty through expert hair care and styling.</p>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-title">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-title">Hours</h4>
+                    <p>Mon-Fri: 9:00 AM - 7:00 PM</p>
+                    <p>Sat: 8:00 AM - 6:00 PM</p>
+                    <p>Sun: Closed</p>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-title">Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-link">FB</a>
+                        <a href="#" class="social-link">IG</a>
+                        <a href="#" class="social-link">TW</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Afro-puff Hairstudio. All rights reserved.</p>
+            </div>
+        </footer>
+        
+    </div>
+</body>
+</html>
